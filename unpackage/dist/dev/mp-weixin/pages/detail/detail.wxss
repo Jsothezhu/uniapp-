@@ -1,0 +1,8 @@
+
+.uparse .p {
+	padding: 0 !important;
+}
+.uparse view {
+	line-height: 0 !important;
+}
+

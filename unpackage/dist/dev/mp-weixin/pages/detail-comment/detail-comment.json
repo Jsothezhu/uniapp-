@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商品评价",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "divder": "/components/common/divder"
+  }
+}

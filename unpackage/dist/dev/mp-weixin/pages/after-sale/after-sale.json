@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "申请售后",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "card": "/components/common/card",
+    "zcmradio-group": "/components/common/radio-group"
+  }
+}

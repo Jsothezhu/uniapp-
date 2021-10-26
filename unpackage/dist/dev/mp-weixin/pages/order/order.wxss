@@ -1,0 +1,6 @@
+
+.tabactive {
+	border-bottom: 5rpx solid #fd6801;
+	color: #fd6801;
+}
+

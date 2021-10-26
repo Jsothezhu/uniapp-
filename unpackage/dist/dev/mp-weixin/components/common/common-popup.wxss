@@ -1,0 +1,91 @@
+
+._popup,._mask{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+._popup{
+	z-index: 2000;
+	display: none;
+}
+._mask{
+	z-index: 2002;
+	background: rgba(0,0,0,0.5);
+}
+._popup ._body{
+	position: fixed;
+	bottom: -1035rpx;
+	width: 92%;
+	padding: 0 4%;
+	height: 1035rpx;
+	background: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	z-index: 2003;
+	border-radius: 20rpx 20rpx 0 0;
+}
+._popup.show{
+	display: block;
+}
+.show ._mask{
+	-webkit-animation: showPopupMask 0.2s linear both;
+	        animation: showPopupMask 0.2s linear both;
+}
+.show ._body{
+	-webkit-animation: showPopupBody 0.2s linear both;
+	        animation: showPopupBody 0.2s linear both;
+}
+.hide ._mask{
+	-webkit-animation: hidePopupMask 0.2s linear both;
+	        animation: hidePopupMask 0.2s linear both;
+}
+.hide ._body{
+	-webkit-animation: hidePopupBody 0.2s linear both;
+	        animation: hidePopupBody 0.2s linear both;
+}
+._popup.hide{
+	display: block;
+}
+._popup.none{
+	display: none;
+}
+@-webkit-keyframes showPopupBody{
+0%{ -webkit-transform: translateY(0); transform: translateY(0);}
+100%{-webkit-transform: translateY(-100%);transform: translateY(-100%);}
+}
+@keyframes showPopupBody{
+0%{ -webkit-transform: translateY(0); transform: translateY(0);}
+100%{-webkit-transform: translateY(-100%);transform: translateY(-100%);}
+}
+@-webkit-keyframes hidePopupBody{
+0%{ -webkit-transform: translateY(-100%); transform: translateY(-100%);}
+100%{-webkit-transform: translateY(0);transform: translateY(0);}
+}
+@keyframes hidePopupBody{
+0%{ -webkit-transform: translateY(-100%); transform: translateY(-100%);}
+100%{-webkit-transform: translateY(0);transform: translateY(0);}
+}
+@-webkit-keyframes showPopupMask{
+0%{ opacity: 0;}
+100%{opacity: 1;}
+}
+@keyframes showPopupMask{
+0%{ opacity: 0;}
+100%{opacity: 1;}
+}
+@-webkit-keyframes hidePopupMask{
+0%{ opacity: 1;}
+100%{opacity: 0;}
+}
+@keyframes hidePopupMask{
+0%{ opacity: 1;}
+100%{opacity: 0;}
+}
+
+
